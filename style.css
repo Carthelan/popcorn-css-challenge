@@ -5,10 +5,11 @@ Header Text - #553100
 Main background - #D4A76A*/
 
 body {
-    display: inline;
     background-color: #D4A76A;
+    margin: 0;
+    padding: 0;
 }
-button{ 
+.nav-button{ 
     background-color: #805215;
     color: white;
     height: 45px;
@@ -17,48 +18,48 @@ button{
     border: 0;
     margin: 15px;
 }
-.header-styling {
+.header-container {
     background-color: #FFDBAA;
-    margin: 0;
-    padding: 0;
     border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
 }
+.button-container {
+    justify-content: space-around;
+    border: 1px solid blue;
+}
+
 .title-style {
     font-size: 35px;
-    margin: 7.5%;
+    width: 50%;
+    text-align: center;
+    /*margin: 7.5%;*/
+
 }
 
-.body-styling{
+.nav-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.middle-container {
+    justify-content: space-around
 
+}
+.content-button {
+    background-color: #805215;
+    color: white;
+    height: 45px;
+    width: 90px;
+    box-shadow: none;
+    border: 0;
+    margin: 15px;
+    border: 1px solid black;
+}
+
+.content-container {
+    justify-content: left;
 }
 
 
-
-/*.grid-container{
-/*    display: grid;
-/*    
-/*}
-/*
-/*.grid-header{
-/*    grid-column: 1 / 3;
-/*    display: inline-grid;
-/*    color: #553100;
-/*    & item1 {
-/*        grid-column: 3;
-/*        border: 1px solid black;
-/*    }
-/*    & item2 {
-/*        grid-column: 4;
-/*    }
-/*    & item3 {
-/*        grid-column: 5;
-/*    }
-/*    & item4 {
-/*        grid-column: 6;
-/*    }
-/*}
-/*
-/*
-/*.grid-main {
-/*    grid-column: 1 / 2;
-/*}
